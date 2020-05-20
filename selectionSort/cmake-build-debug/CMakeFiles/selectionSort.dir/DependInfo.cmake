@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/workSpace/algorithm/selectionSort/main.cpp" "F:/workSpace/algorithm/selectionSort/cmake-build-debug/CMakeFiles/selectionSort.dir/main.cpp.obj"
+  "/Users/ning/WorkSpace/DataAlgorithms/selectionSort/main.cpp" "/Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles/selectionSort.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

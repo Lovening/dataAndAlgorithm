@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/selectionSort.dir/main.cpp.obj"
-  "libselectionSort.dll.a"
-  "selectionSort.exe"
-  "selectionSort.exe.manifest"
+  "CMakeFiles/selectionSort.dir/main.cpp.o"
+  "selectionSort"
   "selectionSort.pdb"
 )
 
