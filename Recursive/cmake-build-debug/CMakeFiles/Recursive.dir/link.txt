@@ -1,3 +1,0 @@
-"G:\program File\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Recursive.dir/objects.a
-C:\PROGRA~2\mingw64\bin\ar.exe cr CMakeFiles\Recursive.dir/objects.a @CMakeFiles\Recursive.dir\objects1.rsp
-C:\PROGRA~2\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Recursive.dir/objects.a -Wl,--no-whole-archive  -o Recursive.exe -Wl,--out-implib,libRecursive.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Recursive.dir\linklibs.rsp

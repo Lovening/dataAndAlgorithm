@@ -1,3 +1,0 @@
-"G:\program File\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\binarySearch.dir/objects.a
-C:\PROGRA~2\mingw64\bin\ar.exe cr CMakeFiles\binarySearch.dir/objects.a @CMakeFiles\binarySearch.dir\objects1.rsp
-C:\PROGRA~2\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\binarySearch.dir/objects.a -Wl,--no-whole-archive  -o binarySearch.exe -Wl,--out-implib,libbinarySearch.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\binarySearch.dir\linklibs.rsp
