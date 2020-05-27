@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/permutations
+CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/selectionSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named permutations
+# Target rules for targets named selectionSort
 
 # Build rule for target.
-permutations: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 permutations
-.PHONY : permutations
+selectionSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 selectionSort
+.PHONY : selectionSort
 
 # fast build rule for target.
-permutations/fast:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/build
-.PHONY : permutations/fast
+selectionSort/fast:
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/build
+.PHONY : selectionSort/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... permutations"
+	@echo "... selectionSort"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

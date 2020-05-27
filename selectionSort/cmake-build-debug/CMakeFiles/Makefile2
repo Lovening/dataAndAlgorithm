@@ -44,16 +44,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/permutations
+CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/selectionSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/permutations.dir/all
+all: CMakeFiles/selectionSort.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/permutations.dir/clean
+clean: CMakeFiles/selectionSort.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/permutations.dir
+# Target rules for target CMakeFiles/selectionSort.dir
 
 # All Build rule for target.
-CMakeFiles/permutations.dir/all:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/depend
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target permutations"
-.PHONY : CMakeFiles/permutations.dir/all
+CMakeFiles/selectionSort.dir/all:
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/depend
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target selectionSort"
+.PHONY : CMakeFiles/selectionSort.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/permutations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/permutations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/permutations.dir/rule
+CMakeFiles/selectionSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/selectionSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/selectionSort.dir/rule
 
 # Convenience name for target.
-permutations: CMakeFiles/permutations.dir/rule
+selectionSort: CMakeFiles/selectionSort.dir/rule
 
-.PHONY : permutations
+.PHONY : selectionSort
 
 # clean rule for target.
-CMakeFiles/permutations.dir/clean:
-	$(MAKE) -f CMakeFiles/permutations.dir/build.make CMakeFiles/permutations.dir/clean
-.PHONY : CMakeFiles/permutations.dir/clean
+CMakeFiles/selectionSort.dir/clean:
+	$(MAKE) -f CMakeFiles/selectionSort.dir/build.make CMakeFiles/selectionSort.dir/clean
+.PHONY : CMakeFiles/selectionSort.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

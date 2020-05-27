@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ning/WorkSpace/DataAlgorithms/permutations
+# Install script for directory: /Users/ning/WorkSpace/DataAlgorithms/selectionSort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ning/WorkSpace/DataAlgorithms/permutations/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ning/WorkSpace/DataAlgorithms/selectionSort/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
