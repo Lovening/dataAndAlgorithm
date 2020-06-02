@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/insertion.dir/main.cpp.obj"
-  "insertion.exe"
-  "insertion.exe.manifest"
+  "CMakeFiles/insertion.dir/main.cpp.o"
+  "insertion"
   "insertion.pdb"
-  "libinsertion.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
