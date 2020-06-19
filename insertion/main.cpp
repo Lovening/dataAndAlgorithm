@@ -42,6 +42,7 @@ template<typename  T>void insertionSort_2( T* a,int len)
         }
         a[in] = temp;
     }
+
 }
 
 int main() {
