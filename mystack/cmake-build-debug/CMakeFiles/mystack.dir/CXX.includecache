@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/WorkSpace/DataAlgorithms/mystack/main.cpp
+iostream
+-
+myStack.h
+/Users/ning/WorkSpace/DataAlgorithms/mystack/myStack.h
+
+/Users/ning/WorkSpace/DataAlgorithms/mystack/myStack.h
+myUntil.h
+/Users/ning/WorkSpace/DataAlgorithms/mystack/myUntil.h
+iostream
+-
+
+/Users/ning/WorkSpace/DataAlgorithms/mystack/myUntil.h
+algorithm
+-
+

@@ -3,4 +3,4 @@ project(mystack)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(mystack main.cpp myUntil.h myUntil.cpp myStack.cpp myStack.h)
+add_executable(mystack main.cpp myUntil.h myStack.h)

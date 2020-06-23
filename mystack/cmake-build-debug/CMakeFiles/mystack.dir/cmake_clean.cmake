@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mystack.dir/main.cpp.obj"
-  "CMakeFiles/mystack.dir/myStack.cpp.obj"
-  "CMakeFiles/mystack.dir/myUntil.cpp.obj"
-  "libmystack.dll.a"
-  "mystack.exe"
-  "mystack.exe.manifest"
+  "CMakeFiles/mystack.dir/main.cpp.o"
+  "mystack"
   "mystack.pdb"
 )
 
