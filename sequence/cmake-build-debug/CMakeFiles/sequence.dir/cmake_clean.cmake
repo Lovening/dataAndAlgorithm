@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sequence.dir/main.cpp.obj"
-  "libsequence.dll.a"
-  "sequence.exe"
-  "sequence.exe.manifest"
+  "CMakeFiles/sequence.dir/main.cpp.o"
+  "sequence"
   "sequence.pdb"
 )
 
