@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/swap.dir/main.cpp.o"
-  "swap"
+  "CMakeFiles/swap.dir/main.cpp.obj"
+  "libswap.dll.a"
+  "swap.exe"
+  "swap.exe.manifest"
   "swap.pdb"
 )
 

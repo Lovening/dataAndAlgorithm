@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/workSpace/algorithm/list/main.cpp
+iostream
+-
+mlist.h
+F:/workSpace/algorithm/list/mlist.h
+
+F:/workSpace/algorithm/list/mlist.h
+
