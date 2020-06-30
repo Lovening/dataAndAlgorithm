@@ -13,8 +13,8 @@ class ListNode
     friend class List<Type>;
 
 private:
-    Type data;
-    ListNode * pre;
+    Type data; //具体的数据
+    ListNode * next;
     explicit ListNode(Type);
 };
 
@@ -22,10 +22,11 @@ template <typename Type>
 class List
 {
 public:
-    List() {first = 0;};
+    List() {firstNode = 0;};
 
-    void insert(Type );
+    void insertPre(Type );
 
+    void insertTail(Type);
     void show();
 
     void deletes(Type );
@@ -34,27 +35,30 @@ public:
 
     void concatenate(ListNode<Type>);
 private:
-    ListNode<Type> * first;
+    ListNode<Type> * firstNode;//保存的为链表中的第一个节点
+    //ListNode<Type> * nextNode;
 };
 
 template<typename Type>
 ListNode<Type>::ListNode(Type element):data(element) {
-    pre = NULL;
+    next = NULL;
 }
 
-template<typename Type>
-void List<Type>::insert(Type data) {
-    ListNode<Type >* newNode = new ListNode<Type>(data);
-    newNode->pre = first;
-    first = newNode;
+template <typename Type>
+void List<Type>::insertPre(Type data) {
+    ListNode<Type>* newNode = new ListNode<Type>(data);
+    newNode->next = firstNode;//新的节点的下一个是原来的第一个,新节点的下一个指针一直保存原先的第一个
+    firstNode = newNode;//新的节点成为新的第一个
 }
 
 template<typename Type>
 void List<Type>::show() {
-    for (ListNode<Type> *current = first; current;current = current->pre)
-    {
+
+    ListNode<Type> *current = firstNode;
+    while (current){
         std::cout <<current->data;
-        if (current->pre) std::cout<<"->";
+        if (current->next) std::cout<<"->";
+        current= current->next;
     }
     std::cout<<std::endl;
 }
@@ -63,13 +67,13 @@ template<typename Type>
 void List<Type>::deletes(Type data) {
     ListNode<Type> *previous  = 0;
     ListNode<Type> *current;
-    for (current = first; current && current->data != data;previous = current,current->pre){
+    for (current = firstNode; current && current->data != data;previous = current,current->next){
 
     }
 
     if(current){
         if(previous) previous->pre = current->pre;
-        else first = first->pre;
+        else firstNode = firstNode->pre;
         delete current;
     }
 
@@ -77,22 +81,29 @@ void List<Type>::deletes(Type data) {
 
 template<typename Type>
 void List<Type>::invert() {
-    ListNode<Type> *p = first, *q = 0;
-    while (p){
-        ListNode<Type> *r = q;
-        q = p;
-        p = p->pre;
-        q->pre = p;
+    /*先不遍历找最后一个
+     * 当while 遍历完成后剩下的最后一个first就是最后一个
+     * 先将第一个挪到最后面  找到原先第一个的下一个当头为f
+     * while执行第二遍的时候将第一遍的f的next 指向l  即最初始的f
+     * */
+    ListNode<Type> *f = firstNode, *l = 0;
+    while (f){
+
+        ListNode<Type> *r = l; //r 一直等于最后一个 当第一遍while执行完成后r 成为初始的first
+        l = f;
+
+        f = f->next; //找到原先第一个的下一个当第一个
+        l->next = r;//
     }
-    first = q;
+    firstNode = l;
 }
 
 template<typename Type>
 void List<Type>::concatenate(ListNode<Type> b) {
-    if (!first) {first = b.pre;return;}
+    if (!firstNode) {firstNode = b.pre;return;}
     if (b.pre){
         ListNode<Type> *p;
-        for (p = first; p->pre ;p = p->pre) {
+        for (p = firstNode; p->next ;p = p->pre) {
 
         }
         p->pre = b.pre;

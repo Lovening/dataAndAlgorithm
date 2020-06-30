@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-F:/workSpace/algorithm/list/main.cpp
+/Users/ning/WorkSpace/DataAlgorithms/list/main.cpp
 iostream
 -
 mlist.h
-F:/workSpace/algorithm/list/mlist.h
+/Users/ning/WorkSpace/DataAlgorithms/list/mlist.h
 
-F:/workSpace/algorithm/list/mlist.h
+/Users/ning/WorkSpace/DataAlgorithms/list/mlist.h
 
