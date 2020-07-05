@@ -1,8 +1,8 @@
-# Install script for directory: /Users/ning/WorkSpace/DataAlgorithms/list
+# Install script for directory: F:/workSpace/algorithm/list
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/list")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ning/WorkSpace/DataAlgorithms/list/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/workSpace/algorithm/list/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

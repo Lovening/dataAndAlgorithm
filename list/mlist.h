@@ -6,12 +6,13 @@
 #ifndef LIST_LIST_H
 #define LIST_LIST_H
 template<typename  Type> class List;
+template<typename Type> class ListIterator;
 
 template <typename Type>
 class ListNode
 {
     friend class List<Type>;
-
+    friend class ListIterator<Type>;
 private:
     Type data; //具体的数据
     ListNode * next;
@@ -21,12 +22,14 @@ private:
 template <typename Type>
 class List
 {
+    friend class ListIterator<Type>;
 public:
     List() {firstNode = 0;};
 
     void insertPre(Type );
 
     void insertTail(Type);
+
     void show();
 
     void deletes(Type );
@@ -38,6 +41,50 @@ private:
     ListNode<Type> * firstNode;//保存的为链表中的第一个节点
     //ListNode<Type> * nextNode;
 };
+
+template <typename Type>
+class ListIterator
+{
+public:
+    ListIterator(const List<Type>& l):list(l),current(l.firstNode){
+
+    };
+    bool NotNull();//迭代器指向的当前节点是否为空
+    bool NextNotNull();
+    Type * First();
+    Type* Next();
+private:
+    const List<Type> &list;
+
+    ListNode<Type>* current;
+};
+
+template<typename Type>
+bool ListIterator<Type>::NotNull() {
+    if(current) return true;
+    return false;
+}
+
+template<typename Type>
+bool ListIterator<Type>::NextNotNull() {
+    if(current && current->next) return true;
+    return false;
+}
+
+template<typename Type>
+Type *ListIterator<Type>::First() {
+    if(list.firstNode) return &list.firstNode->data;
+    return 0;
+}
+
+template<typename Type>
+Type *ListIterator<Type>::Next() {
+    if(current && current->next){
+        current = current->next;
+        return  &current->data;
+    }
+    return  0;
+}
 
 template<typename Type>
 ListNode<Type>::ListNode(Type element):data(element) {

@@ -11,9 +11,16 @@ int main() {
     intList.insertPre(12);
 //    intList.insertPre(11);
     //intList.insertTail(17);
-    intList.show();
+    //intList.show();
     intList.invert();
-    intList.show();
+
+    ListIterator <int > iter(intList);
+    if (iter.NotNull()){
+        cout<<" "<<*iter.First();
+        while (iter.NextNotNull())
+            cout<<"->"<<*iter.Next();
+    }
+    //intList.show();
     std::cout << "" <<std::endl;
     return 0;
 }
