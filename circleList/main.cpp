@@ -9,10 +9,6 @@ int main() {
     intList.insertPre(14);
     intList.insertPre(13);
     intList.insertPre(12);
-//    intList.insertPre(11);
-    //intList.insertTail(17);
-    //intList.show();
-    intList.invert();
 
     ListIterator <int > iter(intList);
     if (iter.NotNull()){
@@ -20,7 +16,15 @@ int main() {
         while (iter.NextNotNull())
             cout<<"->"<<*iter.Next();
     }
-    //intList.show();
-    std::cout << "" <<std::endl;
+
+    cout <<"测试循环"<<endl;
+    ListIterator <int > it(intList);
+    cout<<*iter.First()<<endl;
+    cout<<*iter.Next()<<endl;
+    cout<<*iter.Next()<<endl;
+    cout<<*iter.Next()<<endl;
+    cout<<*iter.Next()<<endl;
+    cout<<*iter.Next()<<endl;
+    //std::cout << "" <<iter.First()<<std::endl;
     return 0;
 }
