@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/WorkSpace/DataAlgorithms/queueList/main.cpp
+iostream
+-
+queuelist.h
+/Users/ning/WorkSpace/DataAlgorithms/queueList/queuelist.h
+
+/Users/ning/WorkSpace/DataAlgorithms/queueList/queuelist.h
+stdio.h
+-
+
