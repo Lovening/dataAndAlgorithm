@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/workSpace/algorithm/binaryTree/binaryTree.cpp
+binaryTree.h
+F:/workSpace/algorithm/binaryTree/binaryTree.h
+
+F:/workSpace/algorithm/binaryTree/binaryTree.h
+stdio.h
+-
+iostream
+-
+queue
+-
+
+F:/workSpace/algorithm/binaryTree/main.cpp
+iostream
+-
+binaryTree.h
+F:/workSpace/algorithm/binaryTree/binaryTree.h
+
