@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-F:/workSpace/algorithm/binaryTree/binaryTree.cpp
+/Users/ning/WorkSpace/DataAlgorithms/binaryTree/binaryTree.cpp
 binaryTree.h
-F:/workSpace/algorithm/binaryTree/binaryTree.h
+/Users/ning/WorkSpace/DataAlgorithms/binaryTree/binaryTree.h
 
-F:/workSpace/algorithm/binaryTree/binaryTree.h
+/Users/ning/WorkSpace/DataAlgorithms/binaryTree/binaryTree.h
 stdio.h
 -
 iostream
@@ -18,9 +18,9 @@ iostream
 queue
 -
 
-F:/workSpace/algorithm/binaryTree/main.cpp
+/Users/ning/WorkSpace/DataAlgorithms/binaryTree/main.cpp
 iostream
 -
 binaryTree.h
-F:/workSpace/algorithm/binaryTree/binaryTree.h
+/Users/ning/WorkSpace/DataAlgorithms/binaryTree/binaryTree.h
 

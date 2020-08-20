@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/binarySearchTree.h
+iostream
+-
+
+/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/main.cpp
+iostream
+-
+binarySearchTree.h
+/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/binarySearchTree.h
+
