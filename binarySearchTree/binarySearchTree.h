@@ -31,11 +31,15 @@ template<typename T>
 class BstNode{
     friend class  BST<T>;
 
-private:
+public:
     Element<T> data;
     BstNode* leftChild;
     BstNode* rightChild;
-    void display(int i);
+    void display(int i){
+        std::cout<<"Position "<< i <<":data "<<data.key<<std::endl;
+        if(leftChild) leftChild->display(2*i);
+        if(rightChild) rightChild->display(2*i+1);
+    };
 };
 
 
@@ -70,15 +74,6 @@ public:
 };
 
 
-
-template<typename T>
-void BstNode<T>::display(int i) {
-
-    std::cout<<"Position "<< i <<":data "<<data.key<<std::endl;
-    if(leftChild) leftChild->display(2*i);
-    if(rightChild) rightChild->display(2*i+1);
-}
-
 template<typename T>
 Boolean BST<T>::insertElement(const Element<T> &d) {
 
@@ -86,16 +81,16 @@ Boolean BST<T>::insertElement(const Element<T> &d) {
     BstNode<T> *q = 0;//指向p的父节点
     //插入之前先查找
     while (p){
-        q = p;//记录p的根节点
+        q = p;//记录p的父节点
         if(d.key ==  p->data.key) return FALSE;
         if(d.key < p->data.key) p =p->leftChild ;
-        else p =p->rightChild;
+        else p= p->rightChild;
     }
     //循环结束如果没有return ,则找到了存放新数据的根节点,根节点为q
 
     //创建新的节点
     p = new BstNode<T>;
-    p->rightChild = p->rightChild = 0;
+    p->rightChild = p->leftChild = 0;
     p->data = d;
 
     if(!root) root = p;
@@ -106,7 +101,19 @@ Boolean BST<T>::insertElement(const Element<T> &d) {
 
 template<typename T>
 BstNode<T> *BST<T>::search(const Element<T> &d) {
-    return nullptr;
+    return search(root,d);
+}
+
+template<typename T>
+BstNode<T> *BST<T>::search(BstNode<T> *node, const Element<T> &d) {
+
+    if(!node) return nullptr;
+    if(d.key == node->data.key) return node;
+    if(d.key > node->data.key){
+        return search(node->rightChild,d);
+    } else
+        return search(node->leftChild,d);
+
 }
 
 #endif //BINARYSEARCHTREE_BINARYSEARCHTREE_H

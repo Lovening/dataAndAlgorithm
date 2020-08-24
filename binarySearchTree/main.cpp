@@ -26,6 +26,9 @@ int main() {
     m.insertElement(h);
     m.insertElement(i);
     m.display();
+
+    BstNode<int >* p = m.search(f);
+    std::cout<<"search "<<p->data.key<<std::endl;
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

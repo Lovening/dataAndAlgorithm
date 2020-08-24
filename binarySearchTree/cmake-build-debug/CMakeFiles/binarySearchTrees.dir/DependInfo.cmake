@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/workSpace/algorithm/binarySearchTree/main.cpp" "F:/workSpace/algorithm/binarySearchTree/cmake-build-debug/CMakeFiles/binarySearchTree.dir/main.cpp.obj"
+  "F:/workSpace/algorithm/binarySearchTree/main.cpp" "F:/workSpace/algorithm/binarySearchTree/cmake-build-debug/CMakeFiles/binarySearchTrees.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
