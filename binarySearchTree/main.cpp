@@ -28,7 +28,9 @@ int main() {
     m.display();
 
     BstNode<int >* p = m.search(f);
+    BstNode<int >* p1 = m.iterSearch(g);
     std::cout<<"search "<<p->data.key<<std::endl;
+    std::cout<<"search "<<p1->data.key<<std::endl;
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

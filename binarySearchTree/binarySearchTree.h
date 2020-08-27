@@ -56,10 +56,15 @@ public:
     }
     Boolean insertElement(const Element<T> &d);
 
+    //增加删除方法
+    //前序和后序的遍历
+
+    //递归查找
     BstNode<T>* search(const Element<T> &d);
 
     BstNode<T>* search(BstNode<T>* node,const Element<T>&d);
 
+    //遍历查找
     BstNode<T>* iterSearch(const Element<T>&d);
 
     void display(){
@@ -114,6 +119,18 @@ BstNode<T> *BST<T>::search(BstNode<T> *node, const Element<T> &d) {
     } else
         return search(node->leftChild,d);
 
+}
+//迭代查找
+template<typename T>
+BstNode<T> *BST<T>::iterSearch(const Element<T> &d) {
+
+    for(BstNode<T> *t = root;t; ){
+        if(t->data.key == d.key ) return t;
+        if(d.key < t->data.key) t = t->leftChild;
+        else t =t->rightChild;
+    }
+
+    return 0;
 }
 
 #endif //BINARYSEARCHTREE_BINARYSEARCHTREE_H
