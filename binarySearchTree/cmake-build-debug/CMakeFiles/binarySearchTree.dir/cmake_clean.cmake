@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/binarySearchTree.dir/main.cpp.obj"
-  "binarySearchTree.exe"
-  "binarySearchTree.exe.manifest"
+  "CMakeFiles/binarySearchTree.dir/main.cpp.o"
+  "binarySearchTree"
   "binarySearchTree.pdb"
-  "libbinarySearchTree.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

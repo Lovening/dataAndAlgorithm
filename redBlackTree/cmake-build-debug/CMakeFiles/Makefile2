@@ -44,16 +44,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/binarySearchTree
+CMAKE_SOURCE_DIR = /Users/ning/WorkSpace/DataAlgorithms/redBlackTree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ning/WorkSpace/DataAlgorithms/redBlackTree/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/binarySearchTree.dir/all
+all: CMakeFiles/redBlackTree.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/binarySearchTree.dir/clean
+clean: CMakeFiles/redBlackTree.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/binarySearchTree.dir
+# Target rules for target CMakeFiles/redBlackTree.dir
 
 # All Build rule for target.
-CMakeFiles/binarySearchTree.dir/all:
-	$(MAKE) -f CMakeFiles/binarySearchTree.dir/build.make CMakeFiles/binarySearchTree.dir/depend
-	$(MAKE) -f CMakeFiles/binarySearchTree.dir/build.make CMakeFiles/binarySearchTree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target binarySearchTree"
-.PHONY : CMakeFiles/binarySearchTree.dir/all
+CMakeFiles/redBlackTree.dir/all:
+	$(MAKE) -f CMakeFiles/redBlackTree.dir/build.make CMakeFiles/redBlackTree.dir/depend
+	$(MAKE) -f CMakeFiles/redBlackTree.dir/build.make CMakeFiles/redBlackTree.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/WorkSpace/DataAlgorithms/redBlackTree/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target redBlackTree"
+.PHONY : CMakeFiles/redBlackTree.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/binarySearchTree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/binarySearchTree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/binarySearchTree.dir/rule
+CMakeFiles/redBlackTree.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/redBlackTree/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/redBlackTree.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/WorkSpace/DataAlgorithms/redBlackTree/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/redBlackTree.dir/rule
 
 # Convenience name for target.
-binarySearchTree: CMakeFiles/binarySearchTree.dir/rule
+redBlackTree: CMakeFiles/redBlackTree.dir/rule
 
-.PHONY : binarySearchTree
+.PHONY : redBlackTree
 
 # clean rule for target.
-CMakeFiles/binarySearchTree.dir/clean:
-	$(MAKE) -f CMakeFiles/binarySearchTree.dir/build.make CMakeFiles/binarySearchTree.dir/clean
-.PHONY : CMakeFiles/binarySearchTree.dir/clean
+CMakeFiles/redBlackTree.dir/clean:
+	$(MAKE) -f CMakeFiles/redBlackTree.dir/build.make CMakeFiles/redBlackTree.dir/clean
+.PHONY : CMakeFiles/redBlackTree.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

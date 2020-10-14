@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/main.cpp" "/Users/ning/WorkSpace/DataAlgorithms/binarySearchTree/cmake-build-debug/CMakeFiles/binarySearchTree.dir/main.cpp.o"
+  "/Users/ning/WorkSpace/DataAlgorithms/redBlackTree/main.cpp" "/Users/ning/WorkSpace/DataAlgorithms/redBlackTree/cmake-build-debug/CMakeFiles/redBlackTree.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
